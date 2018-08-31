@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageButton">
+
+    <ImageButton
+        android:id="@+id/corgi"
+        android:layout_width="117dp"
+        android:layout_height="112dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/shiba"
+        app:layout_constraintEnd_toStartOf="@+id/shiba"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shiba"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/corgi" />
+
+    <ImageButton
+        android:id="@+id/shiba"
+        android:layout_width="128dp"
+        android:layout_height="114dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/corgi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shiba" />
+
+</android.support.constraint.ConstraintLayout>
